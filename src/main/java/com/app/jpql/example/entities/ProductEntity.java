@@ -38,7 +38,7 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @EntityListeners(AuditingEntityListener.class)
-@Table(name = "product")
+@Table(name = "PRODUCT")
 @TableGenerator(name = "ProductGen", initialValue = 0, allocationSize = 1)
 public class ProductEntity {
 

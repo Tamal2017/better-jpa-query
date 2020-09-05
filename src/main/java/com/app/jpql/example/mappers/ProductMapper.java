@@ -3,6 +3,8 @@
  */
 package com.app.jpql.example.mappers;
 
+import java.util.List;
+
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -27,5 +29,9 @@ public interface ProductMapper {
 	
 	@InheritInverseConfiguration
 	ProductEntity asProductEntity(Product product);
+	
+	List<Product> asProducts(List<ProductEntity> productEntities);
+	
+	List<ProductEntity> asProductEntities(List<Product> products);
 
 }
